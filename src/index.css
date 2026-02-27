@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #000000;
+  color: #e0e0e0;
+  overflow: hidden;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a2e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00d4ff;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00a8cc;
+}
+
+/* Monaco Editor Customization */
+.monaco-editor {
+  background: #1e1e2e !important;
+}
+
+.monaco-editor .lines-content {
+  background: #1e1e2e !important;
+}
+
+/* Code Syntax Highlighting */
+.token.comment {
+  color: #6a737d;
+}
+
+.token.string {
+  color: #85e89d;
+}
+
+.token.number {
+  color: #79b8ff;
+}
+
+.token.keyword {
+  color: #f97583;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  body {
+    overflow-y: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  ::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+
+  * {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+  }
+
+  input, textarea, select {
+    -webkit-user-select: text;
+  }
+}

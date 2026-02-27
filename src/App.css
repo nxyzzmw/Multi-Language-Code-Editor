@@ -1,0 +1,33 @@
+/* Professional Dark Theme Styling */
+
+:root {
+  --primary-color: #00d4ff;
+  --primary-dark: #00a8cc;
+  --bg-dark: #000000;
+  --bg-darker: #000000;
+  --bg-editor: #111111;
+  --text-primary: #e0e0e0;
+  --text-secondary: #888;
+  --border-color: #222;
+  --error-color: #ff4444;
+  --success-color: #44ff44;
+}
+
+/* Smooth Animations */
+* {
+  transition: all 0.2s ease;
+}
+
+/* Button Hover Effects */
+button {
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 212, 255, 0.3);
+}
+
+button:active {
+  transform: translateY(0);
+}
